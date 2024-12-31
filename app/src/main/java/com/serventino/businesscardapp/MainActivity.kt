@@ -46,7 +46,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             BusinessCardAppTheme {
                 Surface(modifier = Modifier.fillMaxSize()) {
-                    MainApp()
+                    CardApp()
                 }
             }
         }
@@ -54,7 +54,7 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun MainApp(modifier: Modifier = Modifier){
+fun CardApp(modifier: Modifier = Modifier){
     Column(
         modifier = modifier
     ) {
@@ -153,6 +153,6 @@ private fun ContactInfo(
 @Composable
 fun GreetingPreview() {
     BusinessCardAppTheme {
-        MainApp()
+        CardApp()
     }
 }
